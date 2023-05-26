@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {Listado} from "./components/Listado";
 import {Buscador} from "./components/Buscador";
 import {Crear} from "./components/Crear";
@@ -34,7 +34,7 @@ function App() {
 
         {/*Barra lateral*/}
         <aside className="lateral">
-            <Buscador/>
+            <Buscador listadoState={listadoState} setListadoState = {setListadoState}/>
             <Crear setListadoState={setListadoState}/>
         </aside>
 

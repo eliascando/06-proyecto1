@@ -158,6 +158,9 @@ input[type="button"]{
   border-radius: 10px;
   box-shadow: 0px 0px;
 }
+
+.titulo_editado,
+.descripcion_editada,
 .lateral input[type="text"],
 .lateral textarea{
   display: block;
@@ -194,4 +197,8 @@ input[type="button"]{
   .peli-item{
       width: 80%;
   }
+}
+
+.no-encontrado{
+  color:red;
 }

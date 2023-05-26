@@ -26,8 +26,8 @@ export const Crear = ({setListadoState}) => {
         }
 
         //Guardar estado
-        setPeliState(peli);
-
+        setPeliState(prevState => ({ ...prevState, ...peli }));
+        
         //Actualizar el estado del listado principal
         setListadoState(elementos => {
             return [...elementos, peli];
